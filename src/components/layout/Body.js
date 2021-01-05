@@ -3,7 +3,7 @@ import React from "react";
 function Body() {
   return (
     <div className="Body">
-      <p>박지영 파이팅 김결 파이팅 이은학은 망해라</p>
+      <p>겨리가 최고야 박결말고 김결</p>
     </div>
   );
 }
