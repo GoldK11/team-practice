@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 function Body() {
   return (
     <div className="Body">
-      <p>fighting...</p>
+      <p>hello</p>
     </div>
   );
 }

@@ -19,9 +19,26 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+      "airbnb",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "react/prefer-stateless-function": 1,
+      "react/jsx-filename-extension": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "import/no-unresolved": 0,
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    },
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +51,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "2.2.1"
   }
 }
