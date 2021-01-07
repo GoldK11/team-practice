@@ -27,7 +27,10 @@ for Application
 
 for development
 
-- ///
+- prettier
+- eslint-config-airbnb
+- eslint-config-prettier
+- eslint-plugin-prettier
 
 ## 기타
 
