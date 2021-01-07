@@ -3,7 +3,7 @@ const CONST = {
 
   PLACEHOLDER: {
     TITLE: '제목',
-    GENRE: '장르',
+    CATEGORY: '카테고리',
     EMPTY_TABLE: 'No Data',
   },
 
