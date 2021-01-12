@@ -10,3 +10,37 @@
   height: 100%;
   overflow: auto;
 }
+
+/* temp */
+.Header {
+  grid-area: 1/1/2/1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.Header .LeftNav {
+  width: 200px;
+  text-align: center;
+}
+.Header .CenterNav {
+  width: calc(100% - 500px);
+  min-width: 500px;
+}
+.Header .RightNav {
+  width: 300px;
+  text-align: center;
+}
+
+.Page {
+  grid-area: 2/1/3/1;
+  padding: 20px 5% 40px 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer {
+  grid-area: 3/1/4/1;
+}

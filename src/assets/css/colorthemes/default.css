@@ -7,75 +7,81 @@
     rgba(100, 145, 198, 1) 99%
   );
 }
-.Header,
-.Footer {
+.MainColor {
   background-color: #1976d2 !important;
 }
-.Body {
+.MainColorText {
+  color: white;
+}
+.MainBody {
   background-color: white !important;
 }
 
+/* 
+
+===Color Guide===
+
+Title     100
+SubTitle  80
+Body      60
+SubBody   40
+Extra     20
+Disabled  5
+
+*/
+
 /* text */
-.ColorTitle {
+.Color100 {
   color: #131313 !important;
 }
-.ColorBody {
+.Color80 {
   color: #282828 !important;
 }
-.ColorExtra {
+.Color60 {
   color: #757575 !important;
 }
-.ColorDisabled {
+.Color40 {
   color: #bdbdbd !important;
 }
-.ColorActive {
-  /*  */
+.Color20 {
 }
-.ColorBrightest {
-  color: white !important;
-}
-.ColorDarkest {
-  color: black !important;
+.Color5 {
 }
 
 /* background */
-.BackColorTitle {
+.Back100 {
   background-color: #131313 !important;
 }
-.BackColorBody {
+.Back80 {
   background-color: #282828 !important;
 }
-.BackColorExtra {
+.Back60 {
   background-color: #757575 !important;
 }
-.BackColorDisabled {
+.Back40 {
   background-color: #bdbdbd !important;
 }
-.BackColorWhite {
-  background-color: white !important;
+.Back20 {
 }
-.BackColorConents {
-  background-color: #ccd2d9 !important;
-}
-.BackColorConentsLight {
-  background-color: #dfe3e7 !important;
-}
-.BackColorActive {
-  /*  */
+.Back5 {
 }
 
 /* border */
-.BorderTitle {
-  border: 1px solid #131313;
+.Border100 {
+  border-color: #131313 !important;
 }
-.BorderBody {
-  border: 1px solid #282828;
+.Border80 {
+  border-color: #282828 !important;
 }
-.BorderExtra {
-  border: 1px solid #757575;
+.Border60 {
+  border-color: #757575 !important;
 }
-.BorderDisabled {
-  border: 1px solid #bdbdbd;
+.Border40 {
+  border-color: #bdbdbd !important;
+}
+.Border20 {
+}
+.Border5 {
 }
 
 /* button:hover */

@@ -1,3 +1,5 @@
+// all of these contents are temporal
+
 const CONST = {
   APPLICATION: 'WORDATA',
 
@@ -111,63 +113,47 @@ const CONST = {
 
   TABLE: {
     COLUMNS: {
-      LABEL: {
-        IMAGE: '포스터',
-        TITLE: '제목',
-        DIRECTOR: '감독',
-        ACTORS: '배우',
-        RATING: '평점',
-      },
-      VALUE: {
-        IMAGE: 'image',
-        TITLE: 'title',
-        DIRECTOR: 'director',
-        ACTORS: 'actor',
-        RATING: 'userRating',
-      },
+      LABEL: {},
+      VALUE: {},
     },
   },
 
   ROUTER: {
     PATH: {
-      TEMP: '/tmp',
-      HOME: '/',
-      LIST: '/list',
-      MAIN: '/main',
-      MYPAGE: '/mypage',
+      HOME: '/home',
       LOGIN: '/login',
-      WHAT: '/what',
-      WHY: '/why',
-      HOW: '/how',
+      MAIN: '/main',
+      WORD_CHECK: '/word/check',
+      WORD_DETAIL: '/word/detail',
+      WORD_BOOK: '/word/books',
+      WORD_LIST: '/word/list',
+      MYPAGE: '/mypage',
+      SETTING: '/mypage/setting',
       NOT_FOUND: '*',
     },
     NAME: {
-      TEMP: 'Temp',
-      '': 'Home',
-      HOME: 'Home',
-      LIST: 'Movie',
-      MAIN: '분석 페이지',
-      MYPAGE: 'My Page',
-      LOGIN: 'Log In',
-      WHAT: 'What',
-      WHY: 'Who',
-      HOW: 'How',
-      NOT_FOUND: 'NOTFOUND',
+      HOME: 'WORDATA',
+      LOGIN: 'Login',
+      MAIN: 'Main',
+      WORD_CHECK: 'WordCheck',
+      WORD_DETAIL: 'WordDetail',
+      WORD_BOOK: 'WordBook',
+      WORD_LIST: 'WordList',
+      MYPAGE: 'Mypage',
+      SETTING: 'Setting',
+      NOT_FOUND: 'NotFound',
     },
     META: {
-      CATEGORY: {
-        MAIN: 1,
-        SUB: 2,
+      POSITION: {
+        RIGHT: 'r',
+        CENTER: 'c',
+        LEFT: 'l',
       },
-    },
-  },
-
-  URL: {
-    QUERY: {
-      QUERY: 'query',
-      GENRE: 'genre',
-      START: 'start',
-      SIZE: 'display',
+      CATEGORY: {
+        ETC: null,
+        APPLICATION: 1,
+        ACCOUNT: 2,
+      },
     },
   },
 };

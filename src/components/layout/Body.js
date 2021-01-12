@@ -3,7 +3,7 @@ import CONST from 'src/assets/js/const';
 
 function Body() {
   return (
-    <div className="Body">
+    <div className="Body MainBody">
       <p>{CONST.APPLICATION}</p>
     </div>
   );
