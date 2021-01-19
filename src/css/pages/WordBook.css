@@ -1,0 +1,15 @@
+.WordBook {
+}
+
+.WordBook .TopLeft {
+  border-top-left-radius: 50px 50px;
+}
+.WordBook .TopRight {
+  border-top-right-radius: 50px 50px;
+}
+.WordBook .BottomLeft {
+  border-bottom-left-radius: 50px 50px;
+}
+.WordBook .BottomRight {
+  border-bottom-right-radius: 50px 50px;
+}

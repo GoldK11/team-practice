@@ -1,12 +1,7 @@
 import React from 'react';
 
 function Banner() {
-  return (
-    <div className="Banner Back80 Color20">
-      <div>WORDATA</div>
-      <div>Banner</div>
-    </div>
-  );
+  return <div className="Banner Back80 Color20 SizeRes40">BANNER </div>;
 }
 
 export default Banner;
