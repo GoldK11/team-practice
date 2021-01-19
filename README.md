@@ -24,6 +24,7 @@ for Application
 - [axios](https://github.com/axios/axios)
 - [react-tabulator](http://tabulator.info/docs/4.9/frameworks#react)
 - material-ui ([core](https://material-ui.com/), [lab](https://material-ui.com/components/about-the-lab/), [icons](https://material-ui.com/components/icons/))
+- [react-slick](https://react-slick.neostack.com/)
 
 for development
 

@@ -14,7 +14,7 @@
   color: white;
 }
 .MainBody {
-  background-color: white !important;
+  background-color: #f0f0f2 !important;
 }
 
 /* 
@@ -44,6 +44,7 @@ Disabled  5
   color: #bdbdbd !important;
 }
 .Color20 {
+  color: #cdcdcd !important;
 }
 .Color5 {
 }
@@ -62,6 +63,7 @@ Disabled  5
   background-color: #bdbdbd !important;
 }
 .Back20 {
+  background-color: #cdcdcd !important;
 }
 .Back5 {
 }
@@ -80,6 +82,7 @@ Disabled  5
   border-color: #bdbdbd !important;
 }
 .Border20 {
+  border-color: #cdcdcd !important;
 }
 .Border5 {
 }

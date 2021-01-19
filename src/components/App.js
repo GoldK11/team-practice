@@ -9,6 +9,8 @@ import 'src/assets/css/common/common.css';
 import 'src/assets/css/colorthemes/default.css';
 import 'src/assets/css/library/tabulator.css';
 import 'src/assets/css/library/material.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import 'src/css/App.css';
 
 function App() {

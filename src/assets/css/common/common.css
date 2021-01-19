@@ -1,12 +1,15 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 /* default tags */
 body {
   margin: 0;
-  height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Noto Sans KR', sans-serif;
+  word-break: keep-all;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    sans-serif; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 button {
   background: none;
@@ -16,9 +19,6 @@ button {
 }
 div {
   box-sizing: border-box;
-}
-#root {
-  height: 100%;
 }
 
 /* scroll bar */
@@ -198,9 +198,10 @@ a:-webkit-any-link {
   border-radius: 2px;
   cursor: pointer;
   padding: 3px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
 }
 .RoundButton,
 .RoundButtonDarken {

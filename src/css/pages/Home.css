@@ -1,0 +1,12 @@
+.Home {
+  grid-area: 1/1/13/13;
+  display: inherit;
+  grid-template: inherit;
+  gap: inherit;
+}
+.Home .Banner {
+  grid-area: 1/1/3/13;
+}
+.Home .Slider {
+  grid-area: 3/2/5/12;
+}

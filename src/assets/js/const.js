@@ -120,7 +120,7 @@ const CONST = {
 
   ROUTER: {
     PATH: {
-      HOME: '/home',
+      HOME: '/',
       LOGIN: '/login',
       MAIN: '/main',
       WORD_CHECK: '/word/check',
@@ -154,6 +154,55 @@ const CONST = {
         APPLICATION: 1,
         ACCOUNT: 2,
       },
+    },
+  },
+  // TEMP
+  DATA: {
+    CARD: {
+      INFO: [
+        {
+          index: 1,
+          title: '',
+          img: 'WORDATA가 수능시험에 효율적인 이유',
+          text: '',
+          customClass: 'BackWhite',
+        },
+        {
+          index: 2,
+          title: '분석',
+          img: '사진',
+          text: '빅데이터에 기반한 나만의 단어장',
+          customClass: 'Back20',
+        },
+        {
+          index: 3,
+          title: '추천',
+          img: '사진',
+          text: '사용자 맞춤 추천 서비스',
+          customClass: 'Back20',
+        },
+        {
+          index: 4,
+          title: '변형',
+          img: '사진',
+          text: '분석한 문제 변형 서비스',
+          customClass: 'Back20',
+        },
+        {
+          index: 5,
+          title: '퀴즈',
+          img: '사진',
+          text: '카드 뒤집기, 유의어-반의어 짝짓기, 예문 채우기',
+          customClass: 'Back20',
+        },
+        {
+          index: 6,
+          title: '사용하기',
+          img: '사진',
+          text: '사용하러 가보실까요?',
+          customClass: 'Back20',
+        },
+      ],
     },
   },
 };

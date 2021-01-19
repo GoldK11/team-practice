@@ -1,8 +1,18 @@
 .MuiButton-root {
-    border-radius: 2px !important;
-    color: #1d1f26 !important;
+  border-radius: 2px !important;
+  color: #1d1f26 !important;
 }
 .MuiButton-outlinedSizeSmall {
-    padding: 1px 4px !important;
-    font-size: 11px !important;
+  padding: 1px 4px !important;
+  font-size: 11px !important;
+}
+
+/* react-slick */
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
+  color: #282828 !important;
+}
+.slick-prev {
+  left: -35px !important;
 }

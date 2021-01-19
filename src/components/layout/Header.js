@@ -1,18 +1,12 @@
 import React from 'react';
 import Navigation from 'src/components/utils/Navigation';
-import Router from 'src/assets/js/router';
+import { getter } from 'src/assets/js/router';
 import CONST from 'src/assets/js/const';
 
 function Header() {
-  const leftNav = Router.filter(
-    ob => ob.meta.position === CONST.ROUTER.META.POSITION.LEFT,
-  );
-  const centerNav = Router.filter(
-    ob => ob.meta.position === CONST.ROUTER.META.POSITION.CENTER,
-  );
-  const rightNav = Router.filter(
-    ob => ob.meta.position === CONST.ROUTER.META.POSITION.RIGHT,
-  );
+  const leftNav = getter(CONST.ROUTER.META.POSITION.LEFT);
+  const centerNav = getter(CONST.ROUTER.META.POSITION.CENTER);
+  const rightNav = getter(CONST.ROUTER.META.POSITION.RIGHT);
 
   return (
     <div className="Header MainColor">

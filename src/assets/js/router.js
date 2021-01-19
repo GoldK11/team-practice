@@ -115,4 +115,9 @@ const Router = [
   },
 ];
 
+const getter = target => {
+  return Router.filter(ob => ob.meta.position === target);
+};
+
+export { getter };
 export default Router;
