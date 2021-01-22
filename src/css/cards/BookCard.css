@@ -1,6 +1,10 @@
 .BookCard {
-  padding: 15px;
+  padding: 15px !important;
   border-radius: 5px;
+}
+.BookCard > div {
+  height: 100%;
+  text-align: initial;
 }
 .BookCard .Title {
   height: 30%;

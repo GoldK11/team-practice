@@ -1,4 +1,5 @@
 {
+  "proxy": "https://k5znxqm6ef.execute-api.us-east-1.amazonaws.com",
   "name": "team-practice",
   "version": "0.1.0",
   "private": true,
@@ -37,6 +38,7 @@
       "react/jsx-one-expression-per-line": 0,
       "react/prop-types": 0,
       "import/no-unresolved": 0,
+      "react/jsx-props-no-spreading": 0,
       "prettier/prettier": [
         "error",
         {
