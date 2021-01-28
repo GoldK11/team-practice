@@ -3,7 +3,7 @@
 This project is supposed to prepare the cooperation of the WORDATA front-end team.  
 React project bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[WORDARA-Prototype]()
+[WORDARA-Prototype](https://goldk11.github.io/team-practice)  
 Temporarily, the production version of this project will be hosted on the GitHub Pages until our server is setup.
 
 You can check the details about this project [here](https://kline1103.tistory.com/74?category=426769)
