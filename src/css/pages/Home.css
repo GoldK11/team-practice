@@ -1,5 +1,4 @@
 .Home {
-  grid-area: 1/1/13/13;
   display: contents;
 }
 .Home .Banner {
@@ -12,7 +11,7 @@
   padding: 40px;
 }
 .Home .WordBook {
-  grid-area: 5/3/7/11 !important;
+  grid-area: 5/2/7/12 !important;
   display: grid;
   grid-template-rows: repeat(2, minmax(40px, 1fr));
   grid-template-columns: repeat(3, minmax(40px, 1fr));

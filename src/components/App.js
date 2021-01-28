@@ -18,10 +18,8 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <div className="TempWrapper">
-          <Body />
-          <Footer />
-        </div>
+        <Body />
+        <Footer />
       </div>
     </Router>
   );

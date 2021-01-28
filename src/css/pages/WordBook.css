@@ -1,5 +1,5 @@
 .WordBook {
-  grid-area: 2/2/10/12;
+  display: contents;
 }
 
 .WordBook .TopLeft {
