@@ -8,14 +8,8 @@
   line-height: 380px;
 }
 .Home .Slider {
-  display: contents;
-}
-.Home .Slider .MainBody2 {
   grid-area: 3/1/5/13;
-}
-.Home .Slider .Contents {
-  grid-area: 3/2/5/12;
-  padding: 40px 60px;
+  padding: 40px;
 }
 .Home .WordBook {
   grid-area: 5/3/7/11 !important;
@@ -36,7 +30,7 @@
   line-height: 380px;
 }
 .Home .Support {
-  grid-area: 11/1/13/13;
+  grid-area: 11/1/12/13;
   text-align: center;
-  line-height: 380px;
+  line-height: 190px;
 }

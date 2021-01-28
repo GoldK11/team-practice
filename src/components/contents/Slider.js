@@ -8,8 +8,7 @@ function Slider() {
   const tempData = CONST.DATA.CARD.INFO;
   return (
     <div className="Slider">
-      <div className="MainBody2" />
-      <Slick className="Contents" dots arrows slidesToShow={4}>
+      <Slick dots arrows slidesToShow={4}>
         {tempData.map(ob => (
           <InfoCard data={ob} key={ob.index} />
         ))}

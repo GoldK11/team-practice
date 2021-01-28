@@ -3,6 +3,11 @@
 This project is supposed to prepare the cooperation of the WORDATA front-end team.  
 React project bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[WORDARA-Prototype]()
+Temporarily, the production version of this project will be hosted on the GitHub Pages until our server is setup.
+
+You can check the details about this project [here](https://kline1103.tistory.com/74?category=426769)
+
 ## Project Guide
 
 주요 내용
@@ -32,6 +37,7 @@ for development
 - eslint-config-airbnb
 - eslint-config-prettier
 - eslint-plugin-prettier
+- gh-pages
 
 ## 기타
 

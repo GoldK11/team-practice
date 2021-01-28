@@ -3,9 +3,12 @@
     0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
   height: 320px;
   width: -webkit-fill-available;
-  margin: 5px 15px !important;
+  margin: 5px 10px !important;
   padding: 15px !important;
   border-radius: 25px !important;
+}
+.InfoCardStart {
+  box-shadow: none;
 }
 .InfoCard > div {
   height: 100%;

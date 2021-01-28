@@ -6,7 +6,7 @@ function Temp() {
   //   console.log(res);
   // });
 
-  return <div className="Temp Color20 SizeRes40 ">Temp</div>;
+  return <div className="Temp Color20 SizeRes40">Temp</div>;
 }
 
 export default Temp;

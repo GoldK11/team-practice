@@ -15,18 +15,18 @@ function Body() {
   };
 
   return (
-    <div className="MainBody Body">
-      <Switch>
-        {Router.map(ob => (
-          <Route
-            key={ob.name}
-            exact
-            path={ob.path}
-            render={() => renderFunc(ob)}
-          />
-        ))}
-      </Switch>
-    </div>
+    // <div className="MainBody Body">
+    <Switch>
+      {Router.map(ob => (
+        <Route
+          key={ob.index}
+          exact
+          path={ob.path}
+          render={() => renderFunc(ob)}
+        />
+      ))}
+    </Switch>
+    // </div>
   );
 }
 

@@ -127,34 +127,31 @@ const CONST = {
       WORD_DETAIL: '/word/detail',
       WORD_BOOK: '/word/books',
       WORD_LIST: '/word/list',
+      Quiz: '/quiz',
       MYPAGE: '/mypage',
       SETTING: '/mypage/setting',
       NOT_FOUND: '*',
     },
     NAME: {
       HOME: 'WORDATA',
-      LOGIN: 'Login',
-      MAIN: 'Main',
+      LOGIN: '로그인',
+      MAIN: '분석페이지',
       WORD_CHECK: 'WordCheck',
       WORD_DETAIL: 'WordDetail',
-      WORD_BOOK: 'WordBook',
+      WORD_BOOK: '단어장',
       WORD_LIST: 'WordList',
+      Quiz: '퀴즈',
       MYPAGE: 'Mypage',
       SETTING: 'Setting',
       NOT_FOUND: 'NotFound',
     },
-    META: {
-      POSITION: {
-        RIGHT: 'r',
-        CENTER: 'c',
-        LEFT: 'l',
-      },
-      CATEGORY: {
-        ETC: null,
-        APPLICATION: 1,
-        ACCOUNT: 2,
-      },
-    },
+    // META: {
+    //   POSITION: {
+    //     RIGHT: 'r',
+    //     CENTER: 'c',
+    //     LEFT: 'l',
+    //   }
+    // },
   },
   // TEMP
   DATA: {
@@ -165,7 +162,7 @@ const CONST = {
           title: '',
           img: 'WORDATA가 수능시험에 효율적인 이유',
           text: '',
-          customClass: 'BackWhite',
+          customClass: 'BackWhite InfoCardStart',
         },
         {
           index: 2,
