@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/team-practice/static/css/main.9c5e9016.chunk.css",
-    "main.js": "/team-practice/static/js/main.ed4da360.chunk.js",
-    "main.js.map": "/team-practice/static/js/main.ed4da360.chunk.js.map",
+    "main.css": "/team-practice/static/css/main.2a821e9c.chunk.css",
+    "main.js": "/team-practice/static/js/main.49bb5845.chunk.js",
+    "main.js.map": "/team-practice/static/js/main.49bb5845.chunk.js.map",
     "runtime-main.js": "/team-practice/static/js/runtime-main.8cc812cf.js",
     "runtime-main.js.map": "/team-practice/static/js/runtime-main.8cc812cf.js.map",
     "static/css/2.c5eee7c5.chunk.css": "/team-practice/static/css/2.c5eee7c5.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.db990ffd.chunk.js.map": "/team-practice/static/js/2.db990ffd.chunk.js.map",
     "index.html": "/team-practice/index.html",
     "static/css/2.c5eee7c5.chunk.css.map": "/team-practice/static/css/2.c5eee7c5.chunk.css.map",
-    "static/css/main.9c5e9016.chunk.css.map": "/team-practice/static/css/main.9c5e9016.chunk.css.map",
+    "static/css/main.2a821e9c.chunk.css.map": "/team-practice/static/css/main.2a821e9c.chunk.css.map",
     "static/js/2.db990ffd.chunk.js.LICENSE.txt": "/team-practice/static/js/2.db990ffd.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/team-practice/static/media/slick.c94f7671.ttf"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.8cc812cf.js",
     "static/css/2.c5eee7c5.chunk.css",
     "static/js/2.db990ffd.chunk.js",
-    "static/css/main.9c5e9016.chunk.css",
-    "static/js/main.ed4da360.chunk.js"
+    "static/css/main.2a821e9c.chunk.css",
+    "static/js/main.49bb5845.chunk.js"
   ]
 }
