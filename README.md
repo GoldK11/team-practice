@@ -1,9 +1,9 @@
 # 프로토타입 협업 실습
 
 [WORDATA-Prototype](https://goldk11.github.io/team-practice)  
-This project is supposed to prepare the cooperation of the WORDATA front-end team.  
-Temporarily, the production version of the project will be hosted on the GitHub Pages until our server is setup.  
- ( bootstrapped with [Create React App](https://github.com/facebook/create-react-app). )  
+ - This project is supposed to prepare the cooperation of the WORDATA front-end team.  
+ - Temporarily, the production version of the project will be hosted on the GitHub Pages until our server is setup.  
+ - bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can check the details about this project [here](https://kline1103.tistory.com/74?category=426769)
 
