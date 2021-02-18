@@ -3,7 +3,7 @@
 /* default tags */
 body {
   margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   word-break: keep-all;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -128,8 +128,8 @@ a:-webkit-any-link {
 .Size16 {
   font-size: 16px;
 }
-.Size20 {
-  font-size: 20px;
+.Size21 {
+  font-size: 21px;
 }
 .Size24 {
   font-size: 24px;
@@ -160,8 +160,8 @@ a:-webkit-any-link {
 .SizeRes16 {
   font-size: calc(16px + 1.5vmin);
 }
-.SizeRes20 {
-  font-size: calc(20px + 2vmin);
+.SizeRes21 {
+  font-size: calc(21px + 2vmin);
 }
 .SizeRes24 {
   font-size: calc(24px + 2vmin);
@@ -198,7 +198,7 @@ a:-webkit-any-link {
   border-radius: 2px;
   cursor: pointer;
   padding: 3px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */

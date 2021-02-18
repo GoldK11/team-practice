@@ -8,16 +8,16 @@
   );
 }
 .MainColor {
-  background-color: #1976d2 !important;
+  background-color: #5e77f2 !important;
 }
 .MainColorText {
-  color: white;
+  color: #313338;
 }
 .MainBody {
-  background-color: white !important;
+  background-color: #f4f5fa !important;
 }
 .MainBody2 {
-  background-color: #f0f0f2 !important;
+  background-color: white !important;
 }
 
 /* 
@@ -35,7 +35,7 @@ Disabled  5
 
 /* text */
 .Color100 {
-  color: #131313 !important;
+  color: #313338 !important;
 }
 .Color80 {
   color: #282828 !important;
@@ -54,7 +54,7 @@ Disabled  5
 
 /* background */
 .Back100 {
-  background-color: #131313 !important;
+  background-color: #313338 !important;
 }
 .Back80 {
   background-color: #282828 !important;
@@ -73,7 +73,7 @@ Disabled  5
 
 /* border */
 .Border100 {
-  border-color: #131313 !important;
+  border-color: #313338 !important;
 }
 .Border80 {
   border-color: #282828 !important;

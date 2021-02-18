@@ -122,6 +122,7 @@ const CONST = {
     PATH: {
       HOME: '/',
       LOGIN: '/login',
+      SIGNUP: '/signup',
       MAIN: '/main',
       WORD_CHECK: '/word/check',
       WORD_DETAIL: '/word/detail',
@@ -135,7 +136,8 @@ const CONST = {
     NAME: {
       HOME: 'WORDATA',
       LOGIN: '로그인',
-      MAIN: '분석페이지',
+      SIGNUP: '회원가입',
+      MAIN: '단어 분석하기',
       WORD_CHECK: 'WordCheck',
       WORD_DETAIL: 'WordDetail',
       WORD_BOOK: '단어장',

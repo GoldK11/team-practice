@@ -8,6 +8,7 @@ import WordList from 'src/components/pages/WordList';
 import Quiz from 'src/components/pages/Quiz';
 import NotFound from 'src/components/pages/NotFound';
 import Login from 'src/components/pages/Login';
+import Signup from 'src/components/pages/Signup';
 import Mypage from 'src/components/pages/Mypage';
 import CONST from 'src/assets/js/const';
 
@@ -25,6 +26,18 @@ const Router = [
     },
   },
   {
+    index: 2,
+    path: CONST.ROUTER.PATH.MAIN,
+    component: Main,
+    name: CONST.ROUTER.NAME.MAIN,
+    meta: {
+      // position: CONST.ROUTER.META.POSITION.RIGHT,
+      // category: CONST.ROUTER.META.CATEGORY.APPLICATION,
+      center: true,
+      authorization: false,
+    },
+  },
+  {
     index: 21,
     path: CONST.ROUTER.PATH.Quiz,
     component: Quiz,
@@ -32,7 +45,7 @@ const Router = [
     meta: {
       // position: CONST.ROUTER.META.POSITION.RIGHT,
       // category: CONST.ROUTER.META.CATEGORY.APPLICATION,
-      header: true,
+      center: true,
       authorization: false,
     },
   },
@@ -66,7 +79,7 @@ const Router = [
     meta: {
       // position: CONST.ROUTER.META.POSITION.CENTER,
       // category: CONST.ROUTER.META.CATEGORY.APPLICATION,
-      header: true,
+      center: true,
       authorization: false,
     },
   },
@@ -81,21 +94,32 @@ const Router = [
       authorization: false,
     },
   },
-
   {
     index: 101,
+    path: CONST.ROUTER.PATH.SIGNUP,
+    component: Signup,
+    name: CONST.ROUTER.NAME.SIGNUP,
+    meta: {
+      // position: CONST.ROUTER.META.POSITION.RIGHT,
+      // category: CONST.ROUTER.META.CATEGORY.ACCOUNT,
+      right: true,
+      authorization: false,
+    },
+  },
+  {
+    index: 102,
     path: CONST.ROUTER.PATH.LOGIN,
     component: Login,
     name: CONST.ROUTER.NAME.LOGIN,
     meta: {
       // position: CONST.ROUTER.META.POSITION.RIGHT,
       // category: CONST.ROUTER.META.CATEGORY.ACCOUNT,
-      header: true,
+      right: true,
       authorization: false,
     },
   },
   {
-    index: 102,
+    index: 103,
     path: CONST.ROUTER.PATH.MYPAGE,
     component: Mypage,
     name: CONST.ROUTER.NAME.MYPAGE,
@@ -107,7 +131,7 @@ const Router = [
     },
   },
   {
-    index: 103,
+    index: 104,
     path: CONST.ROUTER.PATH.SETTING,
     component: Setting,
     name: CONST.ROUTER.NAME.SETTING,
@@ -116,18 +140,6 @@ const Router = [
       // category: CONST.ROUTER.META.CATEGORY.MAIN,
       authorization: true,
       redirect: CONST.ROUTER.PATH.LOGIN,
-    },
-  },
-  {
-    index: 2,
-    path: CONST.ROUTER.PATH.MAIN,
-    component: Main,
-    name: CONST.ROUTER.NAME.MAIN,
-    meta: {
-      // position: CONST.ROUTER.META.POSITION.RIGHT,
-      // category: CONST.ROUTER.META.CATEGORY.APPLICATION,
-      header: true,
-      authorization: false,
     },
   },
   {
