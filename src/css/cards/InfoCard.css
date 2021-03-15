@@ -4,8 +4,7 @@
   height: 320px;
   width: -webkit-fill-available;
   margin: 5px 10px !important;
-  padding: 15px !important;
-  border-radius: 25px !important;
+  border-radius: 5px !important;
 }
 .InfoCardStart {
   box-shadow: none;
@@ -16,14 +15,17 @@
   text-align: initial;
 }
 .InfoCard .Title {
-  height: 20%;
-  text-align: center;
+  height: 10%;
+  padding: 10px;
 }
 .InfoCard .Img {
-  height: 50%;
+  height: 60%;
   padding: 10px;
 }
 .InfoCard .Text {
   height: 30%;
-  padding: 3px;
+  padding: 10px;
+}
+.InfoCard .Navigation {
+  height: 30%;
 }

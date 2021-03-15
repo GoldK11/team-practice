@@ -1,0 +1,94 @@
+import React from 'react';
+import BackCard from 'src/components/cards/BackCard';
+
+import CONST from 'src/assets/js/const';
+import DATA from 'src/assets/js/tempData';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import ButtonBase from '@material-ui/core/ButtonBase';
+
+import 'src/css/pages/Analyze.css';
+
+function Analyze() {
+  const handleUpload = e => {
+    console.log('file change', e.target.files);
+    // const reader = new FileReader();
+    // const file = e.target.files[0];
+    // const { name, type } = controller.filnameParser(file.name);
+
+    // reader.onloadend = () => {
+    //   this.setState({
+    //     fileName: name,
+    //     fileType: type,
+    //   });
+    // };
+    // reader.readAsDataURL(file);
+  };
+
+  const changeFile = () => {
+    console.log('changeFile');
+    // this.setState({ fileName: e.target.value });
+  };
+
+  const changeCategory = (e, value) => {
+    console.log('changeCategory', value);
+  };
+
+  return (
+    <div className="Analyze">
+      <BackCard />
+      <div className="Title SizeRes20 Bold ColorTitle">
+        {CONST.TEXT.MAIN_TITLE}
+      </div>
+      <div className="Upload">
+        <input
+          className="Hidden"
+          id="file-upload"
+          type="file"
+          onChange={handleUpload}
+        />
+        <ButtonBase>
+          <label htmlFor="file-upload" className="Button MainBody">
+            {CONST.TEXT.FILE} {CONST.BUTTON.LABEL.UPLOAD}
+          </label>
+        </ButtonBase>
+      </div>
+      <div className="FileName ">
+        <TextField
+          id="file-name"
+          style={{ minWidth: 120 }}
+          label={`${CONST.TEXT.WORD_LIST} ${CONST.TEXT.NAME}`}
+          value=""
+          onChange={changeFile}
+        />
+      </div>
+      <div className=" Level">레벨선택</div>
+      <div className=" Amount">단어개수 선택</div>
+      <div className="Category">
+        <Autocomplete
+          id="category"
+          style={{ width: 120 }}
+          disableClearable
+          defaultValue={DATA.CARD.CATEGORY[1]}
+          options={DATA.CARD.CATEGORY}
+          getOptionLabel={option => option.title}
+          onChange={changeCategory}
+          renderInput={params => {
+            return (
+              <TextField
+                {...params}
+                label={`${CONST.TEXT.CATOGORY} ${CONST.TEXT.SELECT}`}
+              />
+            );
+          }}
+        />
+      </div>
+      <div className="MainBody Setting"> </div>
+      <div className="Result">
+        <div className="Button MainBody">분석</div>
+      </div>
+    </div>
+  );
+}
+
+export default Analyze;

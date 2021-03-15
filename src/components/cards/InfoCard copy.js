@@ -1,29 +1,26 @@
 import React from 'react';
 import 'src/css/cards/InfoCard.css';
 import ButtonBase from '@material-ui/core/ButtonBase';
-// import { useHistory } from 'react-router-dom';
-// import CONST from 'src/assets/js/const';
-import Navigation from 'src/components/utils/Navigation';
-import { getter } from 'src/assets/js/router';
+import { useHistory } from 'react-router-dom';
+import CONST from 'src/assets/js/const';
 
 function InfoCard(props) {
   const { data } = props;
-  let subElement;
-  if (data.index === 6) {
-    const nav = getter('quick', true);
-    subElement = <Navigation item={nav} />;
-  } else {
-    subElement = data.text;
-  }
+  const history = useHistory();
+
+  const handleClick = () => {
+    if (data.index !== 6) return;
+    history.push(CONST.ROUTER.PATH.ANALYZE);
+  };
 
   const element =
     data.index === 1 ? (
       <div className="Size28">{data.title}</div>
     ) : (
-      <div>
+      <div onClick={handleClick} aria-hidden="true">
         <div className="Img Size28 BackWhite">{data.img}</div>
         <div className="Title Color100 Size24">{data.title}</div>
-        <div className="Text Color60 Size16">{subElement}</div>
+        <div className="Text Color60 Size16">{data.text}</div>
       </div>
     );
 

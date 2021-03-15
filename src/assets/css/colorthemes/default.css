@@ -50,6 +50,7 @@ Disabled  5
   color: #cdcdcd !important;
 }
 .Color5 {
+  color: #f4f5fa !important;
 }
 
 /* background */
@@ -68,7 +69,11 @@ Disabled  5
 .Back20 {
   background-color: #cdcdcd !important;
 }
+.Back10 {
+  background-color: #f0f0f2 !important;
+}
 .Back5 {
+  background-color: #f4f5fa !important;
 }
 
 /* border */

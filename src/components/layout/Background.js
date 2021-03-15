@@ -4,7 +4,7 @@ import CONST from 'src/assets/js/const';
 
 function Background() {
   const backComponent =
-    useLocation().pathname === CONST.ROUTER.PATH.HOME ? (
+    useLocation().pathname === CONST.ROUTER.PATH.MAIN ? (
       <div className="Background">
         <div className="Item1 MainBody" />
         <div className="Item2 MainBody2" />

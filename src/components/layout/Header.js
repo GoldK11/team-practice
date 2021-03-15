@@ -1,11 +1,9 @@
 import React from 'react';
 import Navigation from 'src/components/utils/Navigation';
-import { getter } from 'src/assets/js/router';
+import { getterHeader } from 'src/assets/js/router';
 
 function Header() {
-  const leftNav = getter('home', true);
-  const centerNav = getter('center', true);
-  const rightNav = getter('right', true);
+  const [leftNav, centerNav, rightNav] = getterHeader();
 
   return (
     <div className="Header MainColor">
