@@ -12,8 +12,7 @@ You can check the details about this project [here](https://kline1103.tistory.co
 주요 내용
 
 ### 구조 설계
-
-내용내용
+check [here](https://kline1103.tistory.com/76)  
 
 ### API 통신
 
