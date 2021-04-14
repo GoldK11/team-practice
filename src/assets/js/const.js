@@ -10,10 +10,13 @@ const CONST = {
   },
 
   TEXT: {
+    NUMBER: '개수',
     PERSONAL: '개인',
     ACCOUNT: '계정',
+    SCOPE: '공개범위',
     DIFFICULTY: '난이도',
     MY: '내',
+    WORD: '단어',
     WORD_LIST: '단어장',
     MAIN_TITLE: '단어장 분석 연구 신청서',
     MORE: '더보기',

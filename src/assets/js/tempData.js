@@ -82,12 +82,10 @@ const DATA = {
         customClass: 'BackWhite BottomRight',
       },
     ],
-    CATEGORY: [
-      { title: '수능', value: 1 },
-      { title: '소설', value: 2 },
-      { title: '논문', value: 3 },
-      { title: '뉴스', value: 4 },
-    ],
+    CATEGORY: ['수능', '소설', '논문', '뉴스'],
+    LEVEL: ['초', '중', '고'],
+    NUMBER: [50, 100, 200, '전체'],
+    SHARE: ['공개', '비공개'],
   },
 };
 
