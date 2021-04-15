@@ -82,10 +82,15 @@ const DATA = {
         customClass: 'BackWhite BottomRight',
       },
     ],
+  },
+  UTILS: {
+    LEVEL: {
+      items: ['초', '중', '고'],
+      checked: { 초: false, 중: true, 고: false },
+    },
+    AMOUNT: ['50', '100', '500', '전체'],
+    SCOPE: ['공개', '비공개'],
     CATEGORY: ['수능', '소설', '논문', '뉴스'],
-    LEVEL: ['초', '중', '고'],
-    NUMBER: [50, 100, 200, '전체'],
-    SHARE: ['공개', '비공개'],
   },
 };
 

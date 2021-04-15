@@ -1,57 +1,70 @@
 import React from 'react';
 import BackCard from 'src/components/cards/BackCard';
+import CusRadio from 'src/components/utils/CusRadio';
+import CusCheck from 'src/components/utils/CusCheck';
+import Navigation from 'src/components/utils/Navigation';
+import Controller from 'src/components/utils/Controller';
 
 import CONST from 'src/assets/js/const';
 import DATA from 'src/assets/js/tempData';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
 
 import 'src/css/pages/Analyze.css';
 
 function Analyze() {
+  const [file, setFile] = React.useState({ filename: '', filetype: '' });
+  const [level, setLevel] = React.useState(DATA.UTILS.LEVEL.checked);
+  const [amount, setAmount] = React.useState(DATA.UTILS.AMOUNT[0]);
+  const [scope, setScope] = React.useState(DATA.UTILS.SCOPE[0]);
+  const [category, setCategory] = React.useState(DATA.UTILS.CATEGORY[0]);
+
+  const amountRadios = (
+    <CusRadio
+      items={DATA.UTILS.AMOUNT}
+      options={{
+        value: amount,
+        onChange: e => setAmount(e.target.value),
+        row: true,
+      }}
+    />
+  );
+
+  const scopeRadios = (
+    <CusRadio
+      items={DATA.UTILS.SCOPE}
+      options={{
+        value: scope,
+        onChange: e => setScope(e.target.value),
+        row: true,
+      }}
+    />
+  );
+
+  const levelChecks = (
+    <CusCheck
+      items={DATA.UTILS.LEVEL.items}
+      checkd={level}
+      func={e => setLevel({ ...level, [e.target.name]: e.target.checked })}
+    />
+  );
+
   const handleUpload = e => {
-    console.log('file change', e.target.files);
-    // const reader = new FileReader();
-    // const file = e.target.files[0];
-    // const { name, type } = controller.filnameParser(file.name);
+    const reader = new FileReader();
+    const targetFile = e.target.files[0];
+    const { name, type } = Controller.filnameParser(targetFile.name);
 
-    // reader.onloadend = () => {
-    //   this.setState({
-    //     fileName: name,
-    //     fileType: type,
-    //   });
-    // };
-    // reader.readAsDataURL(file);
+    reader.onloadend = () => {
+      setFile({ filename: name, filetype: type });
+    };
+    reader.readAsDataURL(targetFile);
   };
-
-  const changeFile = () => {
-    console.log('changeFile');
-    // this.setState({ fileName: e.target.value });
-  };
-
-  const changeCategory = (e, value) => {
-    console.log('changeCategory', value);
-  };
-
-  const changeAmount = () => {
-    console.log('changeAmount');
-  };
-  const changeScope = () => {
-    console.log('changeScope');
-  };
-
-  const value = 1;
-  const value2 = 2;
 
   return (
     <div className="Analyze">
       <BackCard />
-      <div className="Title SizeRes20 Bold ColorTitle">
+      <div className="Title Size32 Bold ColorTitle">
         {CONST.TEXT.MAIN_TITLE}
       </div>
       <div className="Upload">
@@ -72,89 +85,44 @@ function Analyze() {
           id="file-name"
           style={{ minWidth: 120 }}
           label={`${CONST.TEXT.WORD_LIST} ${CONST.TEXT.NAME}`}
-          value=""
-          onChange={changeFile}
+          value={file.filename}
+          onChange={e => setFile({ ...file, filename: e.target.value })}
         />
       </div>
       <div className="Item Level">
         <div className="Title">{CONST.TEXT.DIFFICULTY + CONST.TEXT.SELECT}</div>
-        <div className="Contents">
-          <FormControlLabel
-            control={<Checkbox name="checkedB" color="primary" />}
-            label="CheckA"
-          />
-          <FormControlLabel
-            control={<Checkbox name="checkedB" color="primary" />}
-            label="CheckB"
-          />
-          <FormControlLabel
-            control={<Checkbox name="checkedB" color="primary" />}
-            label="CheckC"
-          />
-        </div>
+        <div className="Contents">{levelChecks}</div>
       </div>
       <div className="Item Amount">
         <div className="Title">{CONST.TEXT.WORD + CONST.TEXT.NUMBER}</div>
-        <div className="Contents">
-          <RadioGroup
-            row
-            aria-label="gender"
-            name="gender1"
-            value={value}
-            onChange={changeAmount}
-          >
-            <FormControlLabel
-              value="female"
-              control={<Radio />}
-              label="Female"
-            />
-            <FormControlLabel value="male" control={<Radio />} label="Male" />
-            <FormControlLabel value="other" control={<Radio />} label="Other" />
-            <FormControlLabel
-              value="disabled"
-              disabled
-              control={<Radio />}
-              label="(Disabled option)"
-            />
-          </RadioGroup>
-        </div>
+        <div className="Contents">{amountRadios}</div>
       </div>
       <div className="Item Scope">
         <div className="Title">{CONST.TEXT.SCOPE}</div>
-        <div className="Contents">
-          <RadioGroup
-            row
-            aria-label="gender"
-            name="gender1"
-            value={value2}
-            onChange={changeScope}
-          >
-            <FormControlLabel value="male" control={<Radio />} label="Male" />
-            <FormControlLabel value="other" control={<Radio />} label="Other" />
-          </RadioGroup>
-        </div>
+        <div className="Contents">{scopeRadios}</div>
       </div>
       <div className="Category">
         <Autocomplete
           id="category"
-          style={{ width: 120 }}
+          style={{ width: 160 }}
           disableClearable
-          defaultValue={DATA.CARD.CATEGORY[1]}
-          options={DATA.CARD.CATEGORY}
+          defaultValue={DATA.UTILS.CATEGORY[0]}
+          options={DATA.UTILS.CATEGORY}
           getOptionLabel={option => option}
-          onChange={changeCategory}
+          onChange={(e, value) => setCategory(value)}
           renderInput={params => {
-            return (
-              <TextField
-                {...params}
-                label={`${CONST.TEXT.CATOGORY} ${CONST.TEXT.SELECT}`}
-              />
-            );
+            return <TextField {...params} label={CONST.TEXT.CATOGORY} />;
           }}
         />
       </div>
       <div className="Result">
-        <div className="Button MainBody">분석</div>
+        <button
+          type="button"
+          onClick={() => console.log(amount, level, scope, file, category)}
+        >
+          test
+        </button>
+        <Navigation item={[CONST.ROUTER.NAME.WORD_LIST]} />
       </div>
     </div>
   );

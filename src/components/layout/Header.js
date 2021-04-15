@@ -1,9 +1,16 @@
 import React from 'react';
 import Navigation from 'src/components/utils/Navigation';
-import { getterHeader } from 'src/assets/js/router';
+import CONST from 'src/assets/js/const';
 
 function Header() {
-  const [leftNav, centerNav, rightNav] = getterHeader();
+  const leftNav = [CONST.ROUTER.NAME.MAIN];
+  const rightNav = [
+    CONST.ROUTER.NAME.QUIZ_SELECT,
+    CONST.ROUTER.NAME.WORD_BOOK,
+    CONST.ROUTER.NAME.MYPAGE,
+    CONST.ROUTER.NAME.LOGIN,
+    CONST.ROUTER.NAME.ANALYZE,
+  ];
 
   return (
     <div className="Header MainColor">
@@ -12,12 +19,6 @@ function Header() {
           <Navigation
             item={leftNav}
             customClass="MainColorText Button Size21 Bold"
-          />
-        </div>
-        <div className="Center">
-          <Navigation
-            item={centerNav}
-            customClass="MainColorText Button Size14"
           />
         </div>
         <div className="Right">

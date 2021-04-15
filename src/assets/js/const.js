@@ -144,9 +144,9 @@ const CONST = {
     },
     NAME: {
       MAIN: 'WORDATA',
-      ANALYZE: '단어 분석하기',
+      ANALYZE: '분석 페이지',
       WORD_LIST: '단어 리스트',
-      WORD_BOOK: '내 단어장 목록',
+      WORD_BOOK: '단어장',
       WORD_SHARE: '단어 공유 순위',
       QUIZ_SELECT: '퀴즈 선택',
       QUIZ_FLIP: '카드 뒤집기',

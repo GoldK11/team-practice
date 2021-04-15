@@ -1,17 +1,14 @@
 import React from 'react';
 import 'src/css/cards/InfoCard.css';
 import ButtonBase from '@material-ui/core/ButtonBase';
-// import { useHistory } from 'react-router-dom';
-// import CONST from 'src/assets/js/const';
 import Navigation from 'src/components/utils/Navigation';
-import { getter } from 'src/assets/js/router';
+import CONST from 'src/assets/js/const';
 
 function InfoCard(props) {
   const { data } = props;
   let subElement;
   if (data.index === 6) {
-    const nav = getter('quick', true);
-    subElement = <Navigation item={nav} />;
+    subElement = <Navigation item={[CONST.ROUTER.NAME.ANALYZE]} />;
   } else {
     subElement = data.text;
   }

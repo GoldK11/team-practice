@@ -25,7 +25,6 @@ const Router = [
     component: Main,
     name: CONST.ROUTER.NAME.MAIN,
     meta: {
-      header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: false,
     },
   },
@@ -35,8 +34,6 @@ const Router = [
     component: Analyze,
     name: CONST.ROUTER.NAME.ANALYZE,
     meta: {
-      header: CONST.ROUTER.META.POSITION.RIGHT,
-      quick: true,
       authorization: true,
     },
   },
@@ -46,7 +43,6 @@ const Router = [
     component: WordList,
     name: CONST.ROUTER.NAME.WORD_LIST,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -56,7 +52,6 @@ const Router = [
     component: WordBook,
     name: CONST.ROUTER.NAME.WORD_BOOK,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -66,7 +61,6 @@ const Router = [
     component: WordShare,
     name: CONST.ROUTER.NAME.WORD_SHARE,
     meta: {
-      header: CONST.ROUTER.META.POSITION.CENTER,
       authorization: false,
     },
   },
@@ -76,7 +70,6 @@ const Router = [
     component: QuizSelect,
     name: CONST.ROUTER.NAME.QUIZ_SELECT,
     meta: {
-      header: CONST.ROUTER.META.POSITION.CENTER,
       authorization: true,
     },
   },
@@ -86,7 +79,6 @@ const Router = [
     component: QuizFlip,
     name: CONST.ROUTER.NAME.QUIZ_FLIP,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -96,7 +88,6 @@ const Router = [
     component: QuizFlipR,
     name: CONST.ROUTER.NAME.QUIZ_FLIP_R,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -106,7 +97,6 @@ const Router = [
     component: QuizMul,
     name: CONST.ROUTER.NAME.QUIZ_MUL,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -116,7 +106,6 @@ const Router = [
     component: QuizMulR,
     name: CONST.ROUTER.NAME.QUIZ_MUL_R,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -126,7 +115,6 @@ const Router = [
     component: QuizDeform,
     name: CONST.ROUTER.NAME.QUIZ_DEFORM,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -136,7 +124,6 @@ const Router = [
     component: QuizDeformR,
     name: CONST.ROUTER.NAME.QUIZ_DEFOR_R,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -146,7 +133,6 @@ const Router = [
     component: Join,
     name: CONST.ROUTER.NAME.JOIN,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.RIGHT,
       authorization: false,
     },
   },
@@ -156,7 +142,6 @@ const Router = [
     component: Login,
     name: CONST.ROUTER.NAME.LOGIN,
     meta: {
-      header: CONST.ROUTER.META.POSITION.RIGHT,
       authorization: false,
     },
   },
@@ -166,7 +151,6 @@ const Router = [
     component: Find,
     name: CONST.ROUTER.NAME.FIND,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: false,
     },
   },
@@ -176,7 +160,6 @@ const Router = [
     component: Mypage,
     name: CONST.ROUTER.NAME.MYPAGE,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: true,
     },
   },
@@ -186,22 +169,13 @@ const Router = [
     component: NotFound,
     name: CONST.ROUTER.NAME.NOT_FOUND,
     meta: {
-      // header: CONST.ROUTER.META.POSITION.LEFT,
       authorization: false,
     },
   },
 ];
-
-const getter = (target, value) => {
-  return Router.filter(ob => ob.meta[target] === value);
-};
-const getterHeader = () => {
-  return [
-    Router.filter(ob => ob.meta.header === CONST.ROUTER.META.POSITION.LEFT),
-    Router.filter(ob => ob.meta.header === CONST.ROUTER.META.POSITION.CENTER),
-    Router.filter(ob => ob.meta.header === CONST.ROUTER.META.POSITION.RIGHT),
-  ];
+const getter = value => {
+  return Router.find(ob => ob.name === value);
 };
 
-export { getter, getterHeader };
+export { getter };
 export default Router;
