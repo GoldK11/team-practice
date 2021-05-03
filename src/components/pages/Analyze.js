@@ -2,7 +2,6 @@ import React from 'react';
 import BackCard from 'src/components/cards/BackCard';
 import CusRadio from 'src/components/utils/CusRadio';
 import CusCheck from 'src/components/utils/CusCheck';
-import Navigation from 'src/components/utils/Navigation';
 import Controller from 'src/components/utils/Controller';
 
 import CONST from 'src/assets/js/const';
@@ -61,6 +60,10 @@ function Analyze() {
     reader.readAsDataURL(targetFile);
   };
 
+  const handleClick = () => {
+    console.log(amount, level, scope, file, category);
+  };
+
   return (
     <div className="Analyze">
       <BackCard />
@@ -74,8 +77,8 @@ function Analyze() {
           type="file"
           onChange={handleUpload}
         />
-        <ButtonBase>
-          <label htmlFor="file-upload" className="Button MainBody">
+        <ButtonBase className="MainBody Size16">
+          <label htmlFor="file-upload">
             {CONST.TEXT.FILE} {CONST.BUTTON.LABEL.UPLOAD}
           </label>
         </ButtonBase>
@@ -116,13 +119,11 @@ function Analyze() {
         />
       </div>
       <div className="Result">
-        <button
-          type="button"
-          onClick={() => console.log(amount, level, scope, file, category)}
-        >
-          test
-        </button>
-        <Navigation item={[CONST.ROUTER.NAME.WORD_LIST]} />
+        <ButtonBase className="MainBody Size16">
+          <div aria-hidden="true" onClick={handleClick}>
+            {CONST.BUTTON.LABEL.ANALYSIS}
+          </div>
+        </ButtonBase>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@
   background-color: #5e77f2 !important;
 }
 .MainColorText {
-  color: #313338;
+  color: #313338 !important;
 }
 .MainBody {
   background-color: #f4f5fa !important;
@@ -95,12 +95,7 @@ Disabled  5
 .Border5 {
 }
 
-/* button:hover */
-.Button:hover,
-.RoundButton:hover {
-  background-color: #ffffff26 !important;
-}
-.ButtonDarken:hover,
-.RoundButtonDarken:hover {
-  background-color: #81889940 !important;
+/* label */
+label {
+  cursor: inherit;
 }

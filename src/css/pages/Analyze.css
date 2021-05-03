@@ -26,10 +26,6 @@
 .Analyze .Result {
   grid-area: 11/10/12/11;
 }
-.Analyze .Result .Button {
-  text-align: center;
-}
-
 .Analyze .Item {
   display: flex;
 }

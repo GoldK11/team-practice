@@ -16,16 +16,10 @@ function Header() {
     <div className="Header MainColor">
       <div className="HeaderContent">
         <div className="Left">
-          <Navigation
-            item={leftNav}
-            customClass="MainColorText Button Size21 Bold"
-          />
+          <Navigation item={leftNav} customClass="MainColorText Size21 Bold" />
         </div>
         <div className="Right">
-          <Navigation
-            item={rightNav}
-            customClass="MainColorText Button Size14"
-          />
+          <Navigation item={rightNav} customClass="MainColorText Size14" />
         </div>
       </div>
     </div>
