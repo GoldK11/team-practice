@@ -12,11 +12,15 @@ You can check the details about this project [here](https://kline1103.tistory.co
 주요 내용
 
 ### 구조 설계
+1. 전체 컴포넌트  
 check [here](https://kline1103.tistory.com/76)  
+
+2. 주요 화면 
+[Analyze](https://kline1103.tistory.com/106?category=426769)  
 
 ### API 통신
 
-내용내용
+API 명세서를 전달받는대로 추가 예정    
 
 ### 사용 라이브러리
 
