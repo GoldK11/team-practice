@@ -26,9 +26,8 @@
   grid-column: 1/3;
   text-align: center;
 }
-
 .Header .Right {
-  grid-column: 8/12;
+  grid-column: 7/13;
   text-align: center;
 }
 

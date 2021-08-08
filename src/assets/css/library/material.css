@@ -6,6 +6,12 @@
   padding: 1px 4px !important;
   font-size: 11px !important;
 }
+.MuiButtonBase-root {
+  font-family: 'Noto Sans', sans-serif;
+}
+.MuiButtonBase-root:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
 
 /* react-slick */
 .slick-prev:before,
