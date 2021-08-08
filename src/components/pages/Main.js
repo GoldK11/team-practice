@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
-import 'src/css/pages/Main.css';
+import 'src/css/pages/Main.scss';
 
 function Main() {
   const handleUpload = e => {
@@ -35,11 +35,11 @@ function Main() {
 
   return (
     <div className="Main">
-      <BackCard />
-      <div className="Title SizeRes20 Bold ColorTitle">
+      <BackCard name="BackCard__Main" />
+      <div className="Main__Title SizeRes20 Bold ColorTitle">
         {CONST.TEXT.MAIN_TITLE}
       </div>
-      <div className="Upload">
+      <div className="Main__Upload">
         <input
           className="Hidden"
           id="file-upload"
@@ -52,7 +52,7 @@ function Main() {
           </label>
         </ButtonBase>
       </div>
-      <div className="FileName ">
+      <div className="Main__FileName">
         <TextField
           id="file-name"
           style={{ minWidth: 120 }}
@@ -61,9 +61,9 @@ function Main() {
           onChange={changeFile}
         />
       </div>
-      <div className=" Level">레벨선택</div>
-      <div className=" Amount">단어개수 선택</div>
-      <div className="Category">
+      <div className="Main__Level">레벨선택</div>
+      <div className="Main__Amount">단어개수 선택</div>
+      <div className="Main__Category">
         <Autocomplete
           id="category"
           style={{ width: 120 }}
@@ -82,8 +82,8 @@ function Main() {
           }}
         />
       </div>
-      <div className="MainBody Setting"> </div>
-      <div className="Result">
+      <div className="MainBody Main__Setting"> </div>
+      <div className="Main__Result">
         <div className="Button MainBody">분석</div>
       </div>
     </div>

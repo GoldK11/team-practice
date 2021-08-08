@@ -56,6 +56,7 @@ const CONST = {
       LOGOUT: 'logout',
       LOGIN: 'login',
       PRINT: 'print',
+      SERVICECENTER: 'servicecenter',
     },
     LABEL: {
       IMAGE: '사진',
@@ -75,6 +76,7 @@ const CONST = {
       LOGOUT: '로그아웃',
       LOGIN: '로그인',
       PRINT: '프린트',
+      SERVICECENTER: '고객센터',
     },
   },
 
@@ -122,6 +124,7 @@ const CONST = {
     PATH: {
       HOME: '/',
       LOGIN: '/login',
+      LOGOUT: '/logout',
       SIGNUP: '/signup',
       MAIN: '/main',
       WORD_CHECK: '/word/check',
@@ -131,13 +134,16 @@ const CONST = {
       Quiz: '/quiz',
       MYPAGE: '/mypage',
       SETTING: '/mypage/setting',
+      RECOMMEND: '/recomment',
+      SERVICECENTER: '/servicecenter',
       NOT_FOUND: '*',
     },
     NAME: {
       HOME: 'WORDATA',
-      LOGIN: '로그인',
+      LOGIN: 'Login',
+      LOGOUT: 'Logout',
       SIGNUP: '회원가입',
-      MAIN: '단어 분석하기',
+      MAIN: '분석 페이지',
       WORD_CHECK: 'WordCheck',
       WORD_DETAIL: 'WordDetail',
       WORD_BOOK: '단어장',
@@ -145,6 +151,8 @@ const CONST = {
       Quiz: '퀴즈',
       MYPAGE: 'Mypage',
       SETTING: 'Setting',
+      RECOMMEND: '추천',
+      SERVICECENTER: '고객센터',
       NOT_FOUND: 'NotFound',
     },
     // META: {

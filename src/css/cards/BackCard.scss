@@ -1,0 +1,9 @@
+.BackCard {
+  &__Main {
+    grid-area: 2/2/12/12;
+  }
+  &__Login {
+    text-align: center;
+    grid-area: 2/4/9/10;
+  }
+}

@@ -11,6 +11,8 @@ import Login from 'src/components/pages/Login';
 import Signup from 'src/components/pages/Signup';
 import Mypage from 'src/components/pages/Mypage';
 import CONST from 'src/assets/js/const';
+import Recommend from 'src/components/pages/Recommend';
+import ServiceCenter from 'src/components/pages/ServiceCenter';
 
 const Router = [
   {
@@ -33,7 +35,8 @@ const Router = [
     meta: {
       // position: CONST.ROUTER.META.POSITION.RIGHT,
       // category: CONST.ROUTER.META.CATEGORY.APPLICATION,
-      center: true,
+      main: true,
+      // right: true,
       authorization: false,
     },
   },
@@ -45,7 +48,7 @@ const Router = [
     meta: {
       // position: CONST.ROUTER.META.POSITION.RIGHT,
       // category: CONST.ROUTER.META.CATEGORY.APPLICATION,
-      center: true,
+      right: true,
       authorization: false,
     },
   },
@@ -79,7 +82,7 @@ const Router = [
     meta: {
       // position: CONST.ROUTER.META.POSITION.CENTER,
       // category: CONST.ROUTER.META.CATEGORY.APPLICATION,
-      center: true,
+      right: true,
       authorization: false,
     },
   },
@@ -95,6 +98,15 @@ const Router = [
     },
   },
   {
+    index: 15,
+    path: CONST.ROUTER.PATH.RECOMMEND,
+    component: Recommend,
+    name: CONST.ROUTER.NAME.RECOMMEND,
+    meta: {
+      authorization: false,
+    },
+  },
+  {
     index: 101,
     path: CONST.ROUTER.PATH.SIGNUP,
     component: Signup,
@@ -102,7 +114,7 @@ const Router = [
     meta: {
       // position: CONST.ROUTER.META.POSITION.RIGHT,
       // category: CONST.ROUTER.META.CATEGORY.ACCOUNT,
-      right: true,
+      // right: true,
       authorization: false,
     },
   },
@@ -143,6 +155,16 @@ const Router = [
     },
   },
   {
+    index: 105,
+    path: CONST.ROUTER.PATH.SERVICECENTER,
+    component: ServiceCenter,
+    name: CONST.ROUTER.NAME.SERVICECENTER,
+    meta: {
+      right: true,
+      authorization: false,
+    },
+  },
+  {
     index: 404,
     path: CONST.ROUTER.PATH.NOT_FOUND,
     component: NotFound,
@@ -158,6 +180,8 @@ const Router = [
 const getter = (target, value) => {
   return Router.filter(ob => ob.meta[target] === value);
 };
-
-export { getter };
+const getterOne = target => {
+  return Router.filter(ob => ob.name === target);
+};
+export { getter, getterOne };
 export default Router;

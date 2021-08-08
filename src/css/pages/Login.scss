@@ -1,0 +1,34 @@
+.Login {
+  display: contents;
+
+  &__ID {
+    grid-area: 4/5/4/9;
+  }
+  &__PassWord {
+    grid-area: 5/5/5/9;
+  }
+  &__Maintain {
+    grid-area: 6/7/6/9;
+    text-align: right;
+  }
+  &__Find {
+    grid-area: 6/5/6/9;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__Button {
+    // grid-template-columns: 80px auto 80px;
+    grid-area: 7/5/7/9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // width: 80px;
+    &__B {
+      // text-align: center;
+      justify-content: center;
+      width: 80px;
+    }
+  }
+}

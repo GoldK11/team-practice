@@ -1,8 +1,9 @@
 import React from 'react';
-import 'src/css/cards/BackCard.css';
+import 'src/css/cards/BackCard.scss';
 
-function BackCard() {
-  return <div className="BackCard Back40" />;
+function BackCard(props) {
+  const { name } = props;
+  return <div className={` ${name} Back40`} />;
 }
 
 export default BackCard;

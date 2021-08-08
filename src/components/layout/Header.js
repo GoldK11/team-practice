@@ -4,7 +4,7 @@ import { getter } from 'src/assets/js/router';
 
 function Header() {
   const leftNav = getter('home', true);
-  const centerNav = getter('center', true);
+  const mainNav = getter('main', true);
   const rightNav = getter('right', true);
 
   return (
@@ -16,16 +16,16 @@ function Header() {
             customClass="MainColorText Button Size21 Bold"
           />
         </div>
-        <div className="Center">
-          <Navigation
-            item={centerNav}
-            customClass="MainColorText Button Size14"
-          />
-        </div>
         <div className="Right">
           <Navigation
             item={rightNav}
             customClass="MainColorText Button Size14"
+          />
+        </div>
+        <div className="Main">
+          <Navigation
+            item={mainNav}
+            customClass="MainColorText Button Size15 MainItem "
           />
         </div>
       </div>
