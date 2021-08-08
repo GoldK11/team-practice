@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import BookCard from 'src/components/cards/BookCard';
 import CONST from 'src/assets/js/const';
 import DATA from 'src/assets/js/tempData';
-import 'src/css/pages/WordBook.css';
+import 'src/css/pages/WordBook.scss';
 
 function WordBook() {
   const tempData = DATA.CARD.BOOK;

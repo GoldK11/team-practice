@@ -148,7 +148,7 @@ const CONST = {
       NOT_FOUND: '*',
     },
     NAME: {
-      HOME: 'WORDATA',
+      MAIN: 'WORDATA',
       ANALYZE: '분석 페이지',
       WORD_LIST: '단어 리스트',
       WORD_BOOK: '단어장',

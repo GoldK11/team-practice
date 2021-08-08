@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { getter } from 'src/assets/js/router';
-import 'src/css/utils/Navigation.css';
+import 'src/css/utils/Navigation.scss';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
 function Navigation(props) {

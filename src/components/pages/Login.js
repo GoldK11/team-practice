@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import { Checkbox, FormControlLabel } from '@material-ui/core';
 import Navigation from 'src/components/utils/Navigation';
-import { getterOne } from 'src/assets/js/router';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -26,7 +25,7 @@ function Login() {
   const classes = useStyles();
   return (
     <div className="Login">
-      <BackCard name="BackCard__Login" />
+      <BackCard name="Login" />
       <div className="Login__ID">
         <TextField
           required
@@ -61,18 +60,15 @@ function Login() {
       <div className="Login__Button">
         <button
           type="button"
-          className="Button MainBody Login__Button__B
+          className="MainBody MainColorText Login__Button__B
         "
         >
           로그인
         </button>
         <Navigation
-          item={getterOne(CONST.ROUTER.NAME.SIGNUP)}
-          customClass="Button MainBody MainColorText"
+          item={[CONST.ROUTER.NAME.JOIN]}
+          customClass="MainBody MainColorText"
         />
-        {/* <button type="button" >
-          회원가입
-        </button> */}
       </div>
     </div>
   );

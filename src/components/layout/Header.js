@@ -9,9 +9,8 @@ function Header() {
     CONST.ROUTER.NAME.WORD_BOOK,
     CONST.ROUTER.NAME.MYPAGE,
     CONST.ROUTER.NAME.LOGIN,
-    CONST.ROUTER.NAME.ANALYZE,
   ];
-
+  const mainNav = [CONST.ROUTER.NAME.ANALYZE];
   return (
     <div className="Header MainColor">
       <div className="HeaderContent">
@@ -20,6 +19,12 @@ function Header() {
         </div>
         <div className="Right">
           <Navigation item={rightNav} customClass="MainColorText Size14" />
+        </div>
+        <div className="Main">
+          <Navigation
+            item={mainNav}
+            customClass="MainColorText Size16 MainItem"
+          />
         </div>
       </div>
     </div>

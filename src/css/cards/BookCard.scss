@@ -1,0 +1,17 @@
+.BookCard {
+  padding: 15px !important;
+  border-radius: 5px;
+  &__Title {
+    height: 30%;
+    text-align: center;
+  }
+  &__Text {
+    height: 70%;
+    padding: 10px;
+    text-align: center;
+  }
+}
+.BookCard > div {
+  height: 100%;
+  text-align: initial;
+}

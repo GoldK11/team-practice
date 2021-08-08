@@ -1,5 +1,5 @@
 import React from 'react';
-import 'src/css/cards/InfoCard.css';
+import 'src/css/cards/InfoCard.scss';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
 function InfoCard(props) {

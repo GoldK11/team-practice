@@ -15,7 +15,6 @@ import Login from 'src/components/pages/Login';
 import Find from 'src/components/pages/Find';
 import Mypage from 'src/components/pages/Mypage';
 import NotFound from 'src/components/pages/NotFound';
-
 import CONST from 'src/assets/js/const';
 import Recommend from 'src/components/pages/Recommend';
 import ServiceCenter from 'src/components/pages/ServiceCenter';

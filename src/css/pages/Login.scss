@@ -19,16 +19,16 @@
     align-items: flex-end;
   }
   &__Button {
-    // grid-template-columns: 80px auto 80px;
     grid-area: 7/5/7/9;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    // width: 80px;
     &__B {
-      // text-align: center;
+      all: unset;
       justify-content: center;
       width: 80px;
+      padding: 5px;
+      text-align: center;
     }
   }
 }

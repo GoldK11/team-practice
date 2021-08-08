@@ -5,13 +5,13 @@ import Body from 'src/components/layout/Body';
 import Footer from 'src/components/layout/Footer';
 import 'react-tabulator/lib/styles.css';
 import 'react-tabulator/css/bootstrap/tabulator_bootstrap.min.css';
-import 'src/assets/css/common/common.css';
-import 'src/assets/css/colorthemes/default.css';
-import 'src/assets/css/library/tabulator.css';
-import 'src/assets/css/library/material.css';
+import 'src/assets/css/common/common.scss';
+import 'src/assets/css/colorthemes/default.scss';
+import 'src/assets/css/library/tabulator.scss';
+import 'src/assets/css/library/material.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import 'src/css/App.css';
+import 'src/css/App.scss';
 
 function App() {
   return (

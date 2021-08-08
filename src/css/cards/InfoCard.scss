@@ -1,0 +1,50 @@
+.InfoCard {
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  height: 320px;
+  width: -webkit-fill-available;
+  margin: 5px 10px !important;
+  border-radius: 5px !important;
+
+  // .InfoCardStart {
+  //   box-shadow: none;
+  // }
+  .Title {
+    height: 10%;
+    padding: 10px;
+  }
+  .Img {
+    height: 60%;
+    padding: 10px;
+  }
+  .Text {
+    height: 30%;
+    padding: 10px;
+  }
+  .Navigation {
+    height: 30%;
+  }
+}
+// .InfoCardStart {
+//   box-shadow: none;
+// }
+.InfoCard > div {
+  height: 100%;
+  width: 100%;
+  text-align: initial;
+}
+// .InfoCard .Title {
+//   height: 10%;
+//   padding: 10px;
+// }
+// .InfoCard .Img {
+//   height: 60%;
+//   padding: 10px;
+// }
+// .InfoCard .Text {
+//   height: 30%;
+//   padding: 10px;
+// }
+// .InfoCard .Navigation {
+//   height: 30%;
+// }

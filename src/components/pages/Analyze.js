@@ -3,14 +3,13 @@ import BackCard from 'src/components/cards/BackCard';
 import CusRadio from 'src/components/utils/CusRadio';
 import CusCheck from 'src/components/utils/CusCheck';
 import Controller from 'src/components/utils/Controller';
-
 import CONST from 'src/assets/js/const';
 import DATA from 'src/assets/js/tempData';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import ButtonBase from '@material-ui/core/ButtonBase';
 
-import 'src/css/pages/Analyze.css';
+import 'src/css/pages/Analyze.scss';
 
 function Analyze() {
   const [file, setFile] = React.useState({ filename: '', filetype: '' });
@@ -66,7 +65,7 @@ function Analyze() {
 
   return (
     <div className="Analyze">
-      <BackCard />
+      <BackCard name="Main" />
       <div className="Title Size32 Bold ColorTitle">
         {CONST.TEXT.MAIN_TITLE}
       </div>

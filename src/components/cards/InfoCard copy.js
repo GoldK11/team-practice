@@ -1,5 +1,5 @@
 import React from 'react';
-import 'src/css/cards/InfoCard.css';
+import 'src/css/cards/InfoCard.scss';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import { useHistory } from 'react-router-dom';
 import CONST from 'src/assets/js/const';

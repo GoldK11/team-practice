@@ -5,7 +5,7 @@ import WordBook from 'src/components/pages/WordBook';
 import Simulation from 'src/components/contents/Simulation';
 import WordShare from 'src/components/pages/WordShare';
 import Support from 'src/components/contents/Support';
-import 'src/css/pages/Main.css';
+import 'src/css/pages/Main.scss';
 
 function Main() {
   return (

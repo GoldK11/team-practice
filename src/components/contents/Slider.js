@@ -2,7 +2,7 @@ import React from 'react';
 import InfoCard from 'src/components/cards/InfoCard';
 import Slick from 'react-slick';
 import DATA from 'src/assets/js/tempData';
-// import 'src/css/contents/Slider.css';
+// import 'src/css/contents/Slider.scss';
 
 function Slider() {
   const tempData = DATA.CARD.INFO;
